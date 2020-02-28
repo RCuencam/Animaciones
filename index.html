@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="javascrip.js">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="blanco" id="blanco"></div>
@@ -20,5 +19,18 @@
         <div class="morado"></div>
         <div class="rosado"></div>
     </div>
+    <script>
+        const $blanco = document.getElementById("blanco");
+        const $arcoiris=document.getElementById("arcoiris");
+
+        $blanco.addEventListener("animationend",(event)=>
+        {
+            if(event.animationName ==="extender")
+            {
+                $arcoiris.style.animationName="extender";
+            }
+        })
+
+    </script>
 </body>
 </html>
